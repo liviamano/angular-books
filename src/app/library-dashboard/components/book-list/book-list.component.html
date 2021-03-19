@@ -7,7 +7,7 @@
             <div class="header">ISBN</div>
         </div>
         <div class="library-grid" *ngFor="let book of books;">
-            <div>{{ book.title }}</div>
+            <div> <a routerLink="/books/{{book.isbn}}"> {{ book.title }} </a></div>
             <div>{{ book.author }}</div>
             <div>{{ book.isbn }}</div>
         </div>
