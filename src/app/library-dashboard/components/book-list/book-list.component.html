@@ -1,15 +1,15 @@
 <div class="book-list">
-  <h2>Library</h2>
-  <div class="library-grid-wrapper top-buffer">
-    <div class="library-grid">
-      <div class="header">Title</div>
-      <div class="header">Author</div>
-      <div class="header">ISBN</div>
+    <h2>Library</h2>
+    <div class="library-grid-wrapper top-buffer">
+        <div class="library-grid">
+            <div class="header">Title</div>
+            <div class="header">Author</div>
+            <div class="header">ISBN</div>
+        </div>
+        <div class="library-grid" *ngFor="let book of books;">
+            <div>{{ book.title }}</div>
+            <div>{{ book.author }}</div>
+            <div>{{ book.isbn }}</div>
+        </div>
     </div>
-    <div class="library-grid" *ngFor="let book of books;">
-      <div>{{ book.title }}</div>
-      <div>{{ book.author }}</div>
-      <div>{{ book.isbn }}</div>
-    </div>
-  </div>
 </div>
